@@ -5,10 +5,9 @@ module BigFiveResults
   class TextParser
     include Helpers
 
-    @@filename = 'results.txt'
-
-    def initialize()
-      @filepath = File.join(APP_ROOT, 'extras', @@filename)
+    def initialize(filename:)
+      @filename = filename
+      @filepath = File.join(APP_ROOT, 'extras', @filename)
 
       if !File.exist?(@filepath)
         abort("Results file does not exists")

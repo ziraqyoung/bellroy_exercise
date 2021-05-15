@@ -5,7 +5,9 @@ require_relative 'constants'
 
 module BigFiveResults
   class Controller
-    def initialize
+    def initialize(options:, use_url:)
+      @options = options
+      @use_url = use_url
     end
 
     def run!
@@ -20,23 +22,39 @@ module BigFiveResults
 
       def merged_data
         full_results = {
-          "NAME": "Jane Doe",
-          "EMAIL": "janee@doe.com"
+          "NAME": get_name,
+          "EMAIL": get_email
         }
 
-        # use text file data
-        # full_results.merge! text_file_data
-
-        # use html file data
-        full_results.merge! html_data
+        if @use_url
+          full_results.merge! html_data
+        else
+          full_results.merge! text_file_data
+        end
       end
 
       def text_file_data
-        BigFiveResults::TextParser.new.read
+        BigFiveResults::TextParser.new(filename: get_textfile).read
       end
 
       def html_data
-        BigFiveResults::HTMLParser.new(personality_test_url: BigFiveResults::RESULTS_ENDPOINT).read
+        BigFiveResults::HTMLParser.new(personality_test_url: get_results_url).read
+      end
+
+      def get_name
+        @options[:name] ||= "Janeeeeeee Doeee"
+      end
+
+      def get_email
+        @options[:email] ||= "jane@oeee.com"
+      end
+
+      def get_textfile
+        @options[:textfile] ||= "results.txt"
+      end
+
+      def get_results_url
+        @options[:results_url] ||= BigFiveResults::RESULTS_ENDPOINT
       end
   end
 end
