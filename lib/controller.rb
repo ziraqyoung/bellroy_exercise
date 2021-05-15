@@ -42,11 +42,11 @@ module BigFiveResults
       end
 
       def get_name
-        @options[:name] ||= "Janeeeeeee Doeee"
+        @options[:name] ||= "Josphat Kariuki"
       end
 
       def get_email
-        @options[:email] ||= "jane@oeee.com"
+        @options[:email] ||= "ziraqyoung@outlook.com"
       end
 
       def get_textfile
