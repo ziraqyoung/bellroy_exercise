@@ -1,5 +1,2 @@
 # Ignore Byebug command history file.
 .byebug_history
-
-# Ignore file.json used to inspect the JSON output
-.byebug_history
