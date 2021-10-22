@@ -47,7 +47,7 @@ Other options are:
 
 `-n` specify the *name* to be submitted eg `-name "John Doe"`, defaults to my email *youremail.example.com*
 
-`-e` specify the *email* to be submitted eg `-name "john@doe.com"`, default to my name *Josphat Kariuki*
+`-e` specify the *email* to be submitted eg `-email "john@doe.com"`, default to my name *Josphat Kariuki*
 
 `-u` specify the *personalitytest.net* path to results to be submitted eg `-n "path to results"`
 
