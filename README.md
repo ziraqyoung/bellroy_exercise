@@ -1,4 +1,4 @@
-## Bellroy Exercise is an exercise by [bellroy.com](bellroy.com) to join their technical team. Located at [this github gist](https://gist.github.com/michaelwebb76/b6cf04557f3c639966096bdda65f503c).
+## Bellroy Exercise is an exercise by [bellroy.com](https://bellroy.com) to join their technical team. Located at [this github gist](https://gist.github.com/michaelwebb76/b6cf04557f3c639966096bdda65f503c).
 
 ## Getting Started
 The program uses various gem `nokogiri` to parse HTML, `byebug` for debugging purposes and `rspec` to runs specs.
@@ -45,7 +45,7 @@ USE_URL=true ruby init.rb -u "https://www.personalitytest.net/cgi-bin/shortipipn
 
 Other options are:
 
-`-n` specify the *name* to be submitted eg `-name "John Doe"`, defaults to my email *ziraqyoung@outlook.com*
+`-n` specify the *name* to be submitted eg `-name "John Doe"`, defaults to my email *youremail.example.com*
 
 `-e` specify the *email* to be submitted eg `-name "john@doe.com"`, default to my name *Josphat Kariuki*
 
