@@ -1,6 +1,8 @@
-## Bellroy Exercise is an exercise by [bellroy.com](https://bellroy.com) to join their technical team. Located at [this github gist](https://gist.github.com/michaelwebb76/b6cf04557f3c639966096bdda65f503c).
+## Bellroy Exercise
 
-## Getting Started
+An exercise by [bellroy.com](https://bellroy.com) to join their technical team. Located at this [github gist](https://gist.github.com/michaelwebb76/b6cf04557f3c639966096bdda65f503c).
+
+### Getting Started
 The program uses various gem `nokogiri` to parse HTML, `byebug` for debugging purposes and `rspec` to runs specs.
 
 - Install required gems
@@ -9,7 +11,7 @@ The program uses various gem `nokogiri` to parse HTML, `byebug` for debugging pu
 bundle install
 ```
 
-## Usage
+### Usage
 
 The basic way to run it:
 
@@ -55,7 +57,7 @@ Other options are:
 
 
 
-## Testing
+### Testing
 
 To run the program specs
 
